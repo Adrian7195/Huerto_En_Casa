@@ -8,7 +8,7 @@
 
     <title>Huerto en Casa | Cosecha Salud</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -49,7 +49,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#instalacion">Instalación</a>
             <a href="#planes">Planes</a>
-            <a href="#plantas">Plantas</a>
+            <a href="#" id="openPlanes">Plantas</a>
             <a href="#calculadora">Calculadora</a>
             <a href="#contacto">Contacto</a>
 
@@ -100,9 +100,9 @@
 
             <div class="hero-buttons">
 
-                <button class="btn-primary">
+                <button class="btn-primary" id="openProyecto">
 
-                    <i class="fa-solid fa-compass"></i>
+                    <i class="fa-solid fa-seedling"></i>
                     Iniciar Mi Proyecto
 
                 </button>
@@ -236,79 +236,290 @@
 
         </div>
 
-        <div class="pricing">
+<div class="pricing">
 
-            <div class="plan">
+    <!-- ========================= -->
+    <!-- HOGARES -->
+    <!-- ========================= -->
 
-                <h3>Básico</h3>
+    <div class="plan featured">
 
-                <div class="price">
-                    S/350
-                </div>
+        <div class="plan-icon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        
+        <h3 style="text-align:center;width:100%;">
 
-                <ul>
+            Huertos para Hogares
 
-                    <li>Huerto Pequeño</li>
-                    <li>Instalación</li>
-                    <li>Capacitación</li>
+        </h3>
 
-                </ul>
+        <span class="plan-desde">
+            Desde
+        </span>
 
-                <button>
-                    Elegir Plan
-                </button>
+        <div class="price">
+            S/400
+        </div>
 
+        <h4 class="plan-principal">
+            Huerto Familiar ⭐
+        </h4>
+
+        <div class="plan-rating">
+            ★★★★★ Recomendado
+        </div>
+
+        <ul>
+
+            <li>✔ Instalación completa</li>
+
+            <li>✔ Capacitación personalizada</li>
+
+            <li>✔ Garantía de instalación</li>
+
+            <li>✔ Soporte por WhatsApp</li>
+
+            <li>✔ 6 plantas base incluidas</li>
+
+            <li>✔ Asesoría personalizada</li>
+
+        </ul>
+
+        <div class="plan-lista">
+
+            <div>Esencial<br><strong>S/350</strong></div>
+
+            <div class="activo">
+                Familiar<br><strong>S/400</strong>
             </div>
 
-            <div class="plan featured">
-
-                <div class="popular">
-                    Más Popular
-                </div>
-
-                <h3>Familiar</h3>
-
-                <div class="price">
-                    S/650
-                </div>
-
-                <ul>
-
-                    <li>Huerto Mediano</li>
-                    <li>Mantenimiento</li>
-                    <li>Soporte Mensual</li>
-
-                </ul>
-
-                <button>
-                    Elegir Plan
-                </button>
-
-            </div>
-
-            <div class="plan">
-
-                <h3>Premium</h3>
-
-                <div class="price">
-                    S/950
-                </div>
-
-                <ul>
-
-                    <li>Huerto Grande</li>
-                    <li>Asesoría Total</li>
-                    <li>Atención Prioritaria</li>
-
-                </ul>
-
-                <button>
-                    Elegir Plan
-                </button>
-
-            </div>
+            <div>Premium<br><strong>S/450</strong></div>
 
         </div>
+
+        <button class="openModal">
+
+            Cotizar para mi Hogar
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- EDIFICIOS -->
+    <!-- ========================= -->
+
+    <div class="plan">
+
+        <div class="popular">
+
+            MÁS SOLICITADO
+
+        </div>
+
+        <div class="plan-icon">
+
+            <i class="fa-solid fa-building"></i>
+
+        </div>
+
+        <h3 style="text-align:center;width:100%;">
+
+            Huertos para Edificios
+
+        </h3>
+
+        <span class="plan-desde">
+
+            Desde
+
+        </span>
+
+        <div class="price">
+
+            S/1100
+
+        </div>
+
+        <h4 class="plan-principal">
+
+            Proyecto Mediano ⭐
+
+        </h4>
+
+        <div class="plan-rating">
+
+            ★★★★★ Más solicitado
+
+        </div>
+
+        <ul>
+
+            <li>✔ Diseño personalizado</li>
+
+            <li>✔ Materiales Premium</li>
+
+            <li>✔ Capacitación grupal</li>
+
+            <li>✔ Sistema de drenaje</li>
+
+            <li>✔ Instalación profesional</li>
+
+            <li>✔ Soporte permanente</li>
+
+        </ul>
+
+        <div class="plan-lista">
+
+            <div>Pequeño<br><strong>S/1000</strong></div>
+
+            <div class="activo">
+                Mediano<br><strong>S/1100</strong>
+            </div>
+
+            <div>Grande<br><strong>S/1200</strong></div>
+
+        </div>
+        
+        <button class="openModal">
+
+            Cotizar para mi Edificio
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- PLANES DE SUSCRIPCIÓN -->
+<!-- ========================================= -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <span>PLANES DE MANTENIMIENTO</span>
+
+        <h2>Planes de Suscripción</h2>
+
+        <p>
+            Mantén tu huerto siempre saludable con visitas técnicas,
+            asesoría personalizada y monitoreo continuo.
+        </p>
+
+    </div>
+
+    <div class="pricing subscription-plans">
+
+        <!-- PLAN BÁSICO -->
+
+        <div class="plan">
+
+            <span class="popular" style="background:#dcfce7;color:#15803d;">
+                SOPORTE DIGITAL
+            </span>
+
+            <h3>Plan Básico</h3>
+
+            <p>Ideal para quienes desean acompañamiento remoto.</p>
+
+            <div class="price">
+                S/39
+                <small>/mes</small>
+            </div>
+
+            <ul>
+
+                <li>✔ Soporte y consultas por WhatsApp.</li>
+
+                <li>✔ Manual digital de cultivo.</li>
+
+                <li>✔ Envío mensual de fertilizante e insumos basicos.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- PLAN ESTÁNDAR -->
+
+        <div class="plan featured">
+
+            <span class="popular">
+
+                RECOMENDADO
+
+            </span>
+
+            <h3>Plan Estándar</h3>
+
+            <p>El plan más elegido por nuestros clientes.</p>
+
+            <div class="price">
+
+                S/79
+
+                <small>/mes</small>
+
+            </div>
+
+            <ul>
+
+                <li>✔ 1 visita técnica mensual.</li>
+
+                <li>✔ Poda y mantenimiento.</li>
+
+                <li>✔ Monitoreo y tratamiento ecológico de plagas.</li>
+
+                <li>✔ Reposición de plantines.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- PLAN PREMIUM -->
+
+        <div class="plan">
+
+            <span class="popular"
+            style="background:#ffedd5;color:#ea580c;">
+
+                PREMIUM
+
+            </span>
+
+            <h3>Plan Premium</h3>
+
+            <p>Cuidado completo para tu huerto.</p>
+
+            <div class="price">
+
+                S/129
+
+                <small>/mes</small>
+
+            </div>
+
+            <ul>
+
+                <li>✔ 2 visitas técnicas mensuales y Comunicación directa e inmediata con tu técnico.</li>
+
+                <li>✔ Máximo cuidado, limpieza profunda de malas hierbas.</li>
+
+                <li>✔ Tratamiento intensivo de plagas.</li>
+
+                <li>✔  Renovación de sustratos, tierra y hortalizas anuales.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
 
     </section>
     <!-- NUESTRAS PLANTAS -->
@@ -354,7 +565,7 @@
                     <h3>Tomate</h3>
 
                     <p>
-                        Perfecto para huertos urbanos familiares.
+                        Perfecto para huertos urbanos familiares. 
                     </p>
 
                 </div>
@@ -386,7 +597,7 @@
                     <h3>Albahaca</h3>
 
                     <p>
-                        Ideal para aromatizar comidas y bebidas.
+                        Ideal para aromatizar comidas y bebidas. 
                     </p>
 
                 </div>
@@ -546,7 +757,7 @@
 
             <span>Contacto</span>
 
-            <h2>Solicita tu Cotización</h2>
+            <h2>Solicita Información Adicional</h2>
 
         </div>
 
@@ -566,9 +777,9 @@
 
             <textarea
                 rows="6"
-                placeholder="Describe tu espacio disponible"></textarea>
+                placeholder="Describe tus dudas"></textarea>
 
-            <button type="submit">
+            <button type="submit"> 
 
                 Solicitar Información
 
@@ -582,41 +793,614 @@
 
     <div class="modal" id="modal">
 
-        <div class="modal-content">
+<div class="modal-content cotizacion-modal">
 
-            <button class="close-modal" id="closeModal">
+<button class="close-modal" id="closeModal">&times;</button>
 
-                ×
+<h5>PROCESO COMERCIAL</h5>
 
-            </button>
+<h2>Solicita Tu Cotización Formal</h2>
 
-            <h2>
+<p>
+Completa este breve formulario. Generaremos una propuesta y nos pondremos en contacto contigo.
+</p>
 
-                Solicitar Cotización
+<div class="form-grid">
 
-            </h2>
+<div class="input-group">
+<label>Nombre Completo *</label>
+<input type="text" placeholder="Ej. Carlos Mendoza">
+</div>
 
-            <input
-                type="text"
-                placeholder="Nombre">
+<div class="input-group">
+<label>Teléfono *</label>
+<input type="tel" placeholder="999 999 999">
+</div>
 
-            <input
-                type="email"
-                placeholder="Correo">
+<div class="input-group">
 
-            <input
-                type="tel"
-                placeholder="Teléfono">
+    <label>Tipo de Espacio *</label>
 
-            <button>
+    <select>
 
-                Enviar Solicitud
+        <option>Hogar (Casa, Terrazas, Balcones)</option>
 
-            </button>
+        <option>Edificio Multifamiliar (Comunitario)</option>
+
+    </select>
+
+</div>
+
+<div class="input-group">
+
+<!-- PLAN DE INTERES -->
+<label>Plan de Interés *</label>
+
+<select>
+
+<option>Ninguno</option>
+
+<option>Huerto Esencial (S/350)</option>
+
+<option>Huerto Familiar (S/400)</option>
+
+<option>Huerto Premium (S/450)</option>
+
+<option>Proyecto Pequeño (S/1000)</option>
+
+<option>Proyecto Mediano (S/1100)</option>
+
+<option>Proyecto Grande (S/1200)</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<!-- PLAN DE SUSCRIPCION -->
+<label>Plan de Suscripción</label>
+
+<select>
+
+<option>Ninguno</option>
+
+<option>Plan Básico (S/39/mes)</option>
+
+<option>Plan Estándar (S/79/mes)</option>
+
+<option>Plan Premium (S/129/mes)</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+<div class="evaluacion">
+
+<h3>Evaluación rápida del espacio</h3>
+
+<div class="form-grid">
+
+<div class="input-group">
+<label>Horas de Sol</label>
+<select>
+<option>Más de 4 horas</option>
+<option>2 a 4 horas</option>
+<option>Menos de 2 horas</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>¿Tiene agua cerca?</label>
+<select>
+<option>Sí</option>
+<option>No</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>Tamaño</label>
+<select>
+<option>Pequeño</option>
+<option>Mediano</option>
+<option>Grande</option>
+</select>
+</div>
+
+</div>
+
+</div>
+
+<label>Detalles adicionales</label>
+
+<textarea
+rows="5"
+placeholder="Cuéntanos un poco de tu espacio..."
+></textarea>
+
+<div class="check">
+
+<input type="checkbox">
+
+<span>
+Acepto ser contactado para recibir una cotización.
+</span>
+
+</div>
+
+<button
+class="btn-enviar"
+id="btnEnviarCotizacion">
+<i class="fa-solid fa-paper-plane"></i>
+Procesar y Enviar Cotización
+</button>
+
+</div>
+
+</div>
+<!-- ===================================== -->
+<!-- MODAL PLANES -->
+<!-- ===================================== -->
+
+<div class="modal" id="planesModal">
+
+    <div class="modal-content planes-modal">
+
+        <button class="close-modal" id="closePlanes">&times;</button>
+
+        <div class="planes-header">
+
+            <span>NUESTRA VARIEDAD VERDE</span>
+
+            <h2>Las 6 Plantas Base Que Instalamos</h2>
+
+            <p>
+                Seleccionadas específicamente por su facilidad de cultivo,
+                rápido crecimiento y grandes propiedades aromáticas y nutritivas.
+            </p>
+
+        </div>
+
+        <div class="planes-grid">
+
+            <!-- Hierba Luisa -->
+            <div class="plan-card">
+
+                <div class="plan-image">
+                    <h3>Hierba Luisa</h3>
+                    <span>Medicinal</span>
+                </div>
+
+                <div class="plan-info">
+
+                    <h4>Hierba Luisa</h4>
+
+                    <p>
+                        Excelente digestivo natural con delicioso aroma a limón.
+                        Ideal para terrazas y jardines.
+                    </p>
+
+                    <div class="tags">
+                        <span class="riego">Riego: Moderado</span>
+                        <span class="luz">Luz: Media Sombra</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Manzanilla -->
+            <div class="plan-card">
+
+                <div class="plan-image">
+                    <h3>Manzanilla</h3>
+                    <span>Infusión</span>
+                </div>
+
+                <div class="plan-info">
+
+                    <h4>Manzanilla</h4>
+
+                    <p>
+                        Flores relajantes y decorativas.
+                        Ayuda a prevenir algunos parásitos del suelo.
+                    </p>
+
+                    <div class="tags">
+                        <span class="riego">Riego: Medio</span>
+                        <span class="luz">Luz: Sol Directo</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Cebolla China -->
+            <div class="plan-card">
+
+                <div class="plan-image">
+                    <h3>Cebolla China</h3>
+                    <span>Culinaria</span>
+                </div>
+
+                <div class="plan-info">
+
+                    <h4>Cebolla China</h4>
+
+                    <p>
+                        Muy utilizada en la gastronomía.
+                        Brota nuevamente después de cada corte.
+                    </p>
+
+                    <div class="tags">
+                        <span class="riego">Riego: Frecuente</span>
+                        <span class="luz">Luz: Alta</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Albahaca -->
+            <div class="plan-card">
+
+                <div class="plan-image">
+                    <h3>Albahaca</h3>
+                    <span>Gourmet</span>
+                </div>
+
+                <div class="plan-info">
+
+                    <h4>Albahaca</h4>
+
+                    <p>
+                        Hojas aromáticas ideales para pastas,
+                        pizzas, ensaladas y salsas.
+                    </p>
+
+                    <div class="tags">
+                        <span class="riego">Riego: Abundante</span>
+                        <span class="luz">Luz: Sol Directo</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Lechuga -->
+            <div class="plan-card">
+
+                <div class="plan-image">
+                    <h3>Lechuga</h3>
+                    <span>Ensaladas</span>
+                </div>
+
+                <div class="plan-info">
+
+                    <h4>Lechuga</h4>
+
+                    <p>
+                        Produce hojas frescas durante todo el año.
+                        Excelente para consumo familiar.
+                    </p>
+
+                    <div class="tags">
+                        <span class="riego">Riego: Regular</span>
+                        <span class="luz">Luz: Media</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Germinados -->
+            <div class="plan-card">
+
+                <div class="plan-image">
+                    <h3>Germinados</h3>
+                    <span>Superalimento</span>
+                </div>
+
+                <div class="plan-info">
+
+                    <h4>Germinados</h4>
+
+                    <p>
+                        Brotes ricos en vitaminas y minerales.
+                        Se cosechan en pocos días.
+                    </p>
+
+                    <div class="tags">
+                        <span class="riego">Spray Diario</span>
+                        <span class="luz">Luz: Indirecta</span>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
+
+</div>
+
+<!-- ===================================== -->
+<!-- MODAL INICIAR PROYECTO -->
+<!-- ===================================== -->
+
+<div class="modal" id="proyectoModal">
+
+<div class="modal-content proyecto-modal">
+
+<button class="close-modal" id="closeProyecto">
+
+&times;
+
+</button>
+
+<div class="proyecto-header">
+
+<h5>HUERTO EN CASA</h5>
+
+<h2>¿Cómo iniciamos tu proyecto?</h2>
+
+<p>
+
+Nuestro proceso está diseñado para acompañarte desde la primera idea hasta la cosecha de tus propios alimentos.
+
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-file-signature"></i>
+
+</div>
+
+<div>
+
+<h3>1. Solicitud del Proyecto</h3>
+
+<p>
+
+Recibimos tu solicitud y analizamos tus necesidades.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-location-dot"></i>
+
+</div>
+
+<div>
+
+<h3>2. Visita Técnica</h3>
+
+<p>
+
+Evaluamos iluminación, espacio y condiciones del lugar.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+</div>
+
+<div>
+
+<h3>3. Diseño Personalizado</h3>
+
+<p>
+
+Diseñamos un huerto adaptado a tu hogar.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+</div>
+
+<div>
+
+<h3>4. Instalación</h3>
+
+<p>
+
+Instalamos todo el sistema listo para producir.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<div>
+
+<h3>5. Capacitación</h3>
+
+<p>
+
+Te enseñamos a sembrar, cuidar y cosechar.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-leaf"></i>
+
+</div>
+
+<div>
+
+<h3>6. Acompañamiento</h3>
+
+<p>
+
+Brindamos seguimiento y asesoría permanente.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<h2 class="beneficios-title">
+
+¿Qué incluye nuestro servicio?
+
+</h2>
+
+<div class="beneficios-grid">
+
+<div class="beneficio">
+
+<i class="fa-solid fa-clock"></i>
+
+<h4>Instalación en 48 horas</h4>
+
+<p>
+
+Implementación rápida y segura.
+
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h4>Garantía</h4>
+
+<p>
+
+Garantía en la instalación del huerto.
+
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h4>Capacitación</h4>
+
+<p>
+
+Aprende a cultivar correctamente.
+
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<h4>Soporte</h4>
+
+<p>
+
+Asesoría continua por WhatsApp.
+
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-screwdriver"></i>
+
+<h4>Mantenimiento</h4>
+
+<p>
+
+Servicio opcional para conservar tu huerto.
+
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-user-group"></i>
+
+<h4>Asesoría Personalizada</h4>
+
+<p>
+
+Recomendaciones según tu espacio.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="proyecto-footer">
+
+<a href="#contacto" class="btn-proyecto">
+
+Quiero comenzar mi proyecto
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
     <!-- WHATSAPP -->
 
