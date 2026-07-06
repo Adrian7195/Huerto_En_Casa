@@ -3,25 +3,41 @@
 // =====================================
 
 const modal = document.getElementById("modal");
-const openModal = document.getElementById("openModal");
-const closeModal = document.getElementById("closeModal");
 
-if (openModal) {
-    openModal.addEventListener("click", () => {
+const openModalButtons =
+document.querySelectorAll(".openModal");
+
+const closeModal =
+document.getElementById("closeModal");
+
+openModalButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
         modal.classList.add("active");
+
     });
-}
+
+});
 
 if (closeModal) {
+
     closeModal.addEventListener("click", () => {
+
         modal.classList.remove("active");
+
     });
+
 }
 
 window.addEventListener("click", (e) => {
+
     if (e.target === modal) {
+
         modal.classList.remove("active");
+
     }
+
 });
 
 // =====================================
@@ -277,5 +293,145 @@ if (form) {
 
         }
     );
+
+}
+const planesModal =
+document.getElementById("planesModal");
+
+const openPlanes =
+document.getElementById("openPlanes");
+
+const closePlanes =
+document.getElementById("closePlanes");
+
+if(openPlanes){
+
+openPlanes.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+planesModal.classList.add("active");
+
+});
+
+}
+
+if(closePlanes){
+
+closePlanes.addEventListener("click",()=>{
+
+planesModal.classList.remove("active");
+
+});
+
+}
+
+window.addEventListener("click",(e)=>{
+
+if(e.target===planesModal){
+
+planesModal.classList.remove("active");
+
+}
+
+});
+// =====================================
+// MODAL INICIAR PROYECTO
+// =====================================
+
+const proyectoModal =
+    document.getElementById("proyectoModal");
+
+const openProyecto =
+    document.getElementById("openProyecto");
+
+const closeProyecto =
+    document.getElementById("closeProyecto");
+
+if (openProyecto) {
+
+    openProyecto.addEventListener("click", () => {
+
+        proyectoModal.classList.add("active");
+
+    });
+
+}
+
+if (closeProyecto) {
+
+    closeProyecto.addEventListener("click", () => {
+
+        proyectoModal.classList.remove("active");
+
+    });
+
+}
+
+window.addEventListener("click", (e) => {
+
+    if (e.target === proyectoModal) {
+
+        proyectoModal.classList.remove("active");
+
+    }
+
+});
+
+// =====================================
+// BOTÓN "QUIERO COMENZAR MI PROYECTO"
+// =====================================
+
+const btnProyecto =
+    document.querySelector(".btn-proyecto");
+
+if (btnProyecto) {
+
+    btnProyecto.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        proyectoModal.classList.remove("active");
+
+        const contacto =
+            document.querySelector("#contacto");
+
+        if (contacto) {
+
+            setTimeout(() => {
+
+                contacto.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "start"
+
+                });
+
+            }, 250);
+
+        }
+
+    });
+
+}
+// =====================================
+// ENVÍO DE COTIZACIÓN
+// =====================================
+
+const btnEnviar =
+document.getElementById("btnEnviarCotizacion");
+
+if(btnEnviar){
+
+    btnEnviar.addEventListener("click",()=>{
+
+        alert(
+            "¡Gracias! Tu solicitud fue enviada correctamente."
+        );
+
+        modal.classList.remove("active");
+
+    });
 
 }
